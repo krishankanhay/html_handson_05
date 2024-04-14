@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.container_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 30px;
+    color: white;
+}
+
+.navbar_icon{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.logo{
+    margin-top: 20px
+}
+
+
+
+
+.container_2{
+    display: flex;
+}
+
+.right_container{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    gap: 20px 30px;
+    padding-left: 30px;
+}
+
+.box{
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+
+h1{
+    font-size: 80px;
+}
+
+.left_container{
+    width: 55%;
+    padding: 76px 0px 0px 180px; 
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+
+
+.box1{
+    background-image: url(./pic-1.png);
+    background-size: cover;
+}
+
+.box2{
+    background-image: url(./pic-2.png);
+    background-size: cover;
+}
+
+.box3{
+    background-image: url(./pic-3.png);
+    background-size: cover;
+}
+
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:900px)
+{
+.right_container{
+    grid-template-columns: 400px;
+}
+
+.container_2{
+    flex-direction: column;
+    align-items: center;
+}
+
+.left_container{
+    padding-top: 10px;
+    padding-left: 100px;
+    width: 100%;
+}
+
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:600px)
+{
+    ul li{
+        display: block;
+    }
+    
+    .right_container{
+        grid-template-columns: 180px;
+    }
+    
+    .container_2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_container{
+        padding-top: 10px;
+        padding-left: 40px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .navbar_icon{
+        margin-top: 40px;
+        padding-left: 0px;
+    }
+
+    .logo{
+        margin-top: 50px;
+    }
+    
+}
